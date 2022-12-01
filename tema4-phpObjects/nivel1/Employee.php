@@ -5,7 +5,7 @@ class Employee{
     private $salary;
 
     //methods
-    public function __construct ($name, $salary){
+    public function initialize ($name, $salary){
         $this->name = $name;
         $this->salary = $salary;
     }
@@ -14,6 +14,12 @@ class Employee{
     }
     public function setName($name){
         $this->name = $name;
+    }
+    public function getSalary(){
+        return $this->salary;
+    }
+    public function setSalary($salary){
+        $this->salary = $salary;
     }
     
     public function print(){ 

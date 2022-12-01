@@ -1,10 +1,8 @@
 <?php
 
 class Triangle extends Shape {
-    public function __construct ($base, $height){
-        parent::__construct($base, $height);
-    }
-    public function calculateAre(){
+    
+    public function calculateArea(){
         return ($this->base * $this->height)/2;
     }
 }  

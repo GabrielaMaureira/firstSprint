@@ -9,7 +9,7 @@ abstract class Shape {
     $this->base = $base;
     $this->height = $height;
 }
-abstract public function calculateAre();
+abstract public function calculateArea();
 }
 
 
