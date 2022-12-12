@@ -20,6 +20,7 @@ echo "Upper Case: ".strtoupper($message). "<br>";
 echo "Length: ".strlen($message). "<br>";
 echo "Reverse: ".strrev($message). "<br>";
 $message2 = 'Aquest és el curs de PHP';
+
 echo "Concatenation: ".$message ." ". $message2. "<br>";
 
 echo "<p><h1>Exercise 3</h1></p>";
