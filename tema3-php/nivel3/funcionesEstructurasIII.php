@@ -19,7 +19,7 @@ function isPrimeNumber ($number){
     }else{
         echo $number. " is not a prime number \n";
     }
-}   
+} 
 
 
 ?>
