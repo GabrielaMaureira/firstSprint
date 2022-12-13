@@ -1,0 +1,102 @@
+*{
+    
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.flex-container{
+max-width: 1200px;
+display: flex;
+flex-flow: column nowrap;
+}
+    .header{
+        background-color:black;
+        display: flex;
+        flex-flow: column nowrap; /* Que se muestre en columna */
+    }
+    /* Hijos convertidos en padre también */
+        .menu{
+            background-color: #2d4059;
+            display: flex;
+            flex-flow: row nowrap; /* Que se muestre en fila */
+            
+            align-items: center;
+        }
+            .logo{
+                background: #ea5455;
+                flex: 1 1 auto;
+                height: 30px;
+            }
+            .nav{
+                background: #ea5455;
+                flex: 5 1 auto;
+                
+                height: 30px;
+            }
+            .social{
+                background: #ea5455;
+                flex: 1 1 auto;
+                height: 30px;
+            }
+        .main-text{
+            background-color: #f07b3f;
+        }
+            h1{
+                background-color: #ffd460 ;
+            }
+    .section{
+        background-color: black;
+        display: flex;
+    }
+        .articles{
+            background: #4e4e6a;
+            flex: 2 1 auto;
+            display:flex;
+            flex-flow: row wrap; /* Si los hijos no caben, se acomodan en otra fila*/
+        }
+            .article{
+                background: #1f6cb0;
+                flex: 1 1 40%;
+            }
+            .navigation{
+            background-color: #70a3c4;
+            flex: 1 1 100%; /* Al ocupar el 100% pasa a la siguiente fila*/
+            }
+        .aside{
+            background-color: #f73f52;
+            flex: 1 1 auto;
+        }
+            .publicity{
+                background-color: #ffea85;
+            }
+    .footer{
+       background-color: black; 
+       display: flex;
+       
+    }
+        .end{
+            background-color: #e6af2e;
+            flex: 1 1 auto;
+
+        }
+@media (max-width: 1200px){} /* desktops*/
+@media (max-width: 480px ){ /* smartphone */
+    .section{
+        flex-direction: column;
+   }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .articles{
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px) { /* tablet */
+  
+   .section{
+        flex-direction: column;
+   }
+    
+  }
