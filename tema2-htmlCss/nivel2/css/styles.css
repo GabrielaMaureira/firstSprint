@@ -23,13 +23,15 @@ flex-flow: column nowrap;
             
             display: flex;
             flex-flow: row nowrap; /* Que se muestre en fila */
-            height: 100px;
             align-items: center;
         }
             .logo{
                 flex: 1 1 auto;
-            }
-                
+            } 
+                .logo img{
+                    padding: 5px;
+                    width: 100px;
+                }
             .nav{
                 flex: 5 1 auto;  
                 
@@ -38,10 +40,20 @@ flex-flow: column nowrap;
                     color: grey;
                     text-decoration: none;
                 }
+                    .nav a:hover{
+                        color: salmon;
+                    }
             .social{
                 flex: 1 1 auto; 
-                
+                display: flex;
             }
+                .social a{
+                    color: grey;
+                    
+                }
+                    .social a:hover{
+                        color: salmon;
+                    }
                 
         .main-text{
             background-color: rgba(0, 0, 0, .1);
@@ -55,42 +67,43 @@ flex-flow: column nowrap;
     .section{
         background-color: #cdcdcd;
         display: flex;
+        
     }
         .articles{
             background: #e9ecef;
-            flex: 2 1 auto;
+            flex: 5 1 auto;
             display:flex;
             flex-flow: row wrap; /* Si los hijos no caben, se acomodan en otra fila*/
+            text-align: center;
         }
             .article{
-                background: #1f6cb0;
+                background-color: rgb(237, 229, 229);
                 flex: 1 1 40%;
             }
-            .navigation{
-            background-color: #70a3c4;
+            .textArea{
+                
             flex: 1 1 100%; /* Al ocupar el 100% pasa a la siguiente fila*/
             }
         .aside{
             background-color: #cdcdcd;
             flex: 1 1 auto;
+            text-align: center;
            
         }
-            .p{
-                
-                text-align: center;
-                
-            }
-            .h2{
-                
-                text-align: center;
-            }
+          
     .footer{
-       background-color: black; 
+       background-color: grey; 
        display: flex;
        
     }
         .end{
-            background-color: #e6af2e;
+            background-color: rgb(237, 229, 229);
             flex: 1 1 auto;
+            text-align: center;
 
         }
+            .p{
+                color: black;
+                
+            }
+            
