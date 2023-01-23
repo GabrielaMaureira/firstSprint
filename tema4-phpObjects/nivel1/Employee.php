@@ -23,7 +23,7 @@ class Employee{
     }
     
     public function print(){ 
-        if($this->salary >= 6000){
+        if($this->salary >6000){
             echo  "$this->name  must pay taxes";
         }else{
             echo  "$this->name  must not pay taxes";
