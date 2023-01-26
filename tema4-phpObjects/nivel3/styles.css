@@ -1,0 +1,80 @@
+*{
+    
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.flex-container{
+max-width: 1200px;
+display: flex;
+flex-flow: column nowrap;
+}
+    .header{
+        background-color:darkblue;
+    }
+        .main-text{
+            background-color: antiquewhite;
+            text-align: center;
+        }
+            h1{
+                color: darkblue;
+            }
+            
+   
+    .accountForm{
+        background-color: darkblue;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+        .personalInfo{
+            display: flex;
+            background-color: antiquewhite;
+            flex: 1 1 auto;
+            
+            
+        }
+        
+        .input{
+            flex: 1 1 auto;
+            align-self: auto;
+        }
+        
+        .button {
+            flex: 1 1 auto;
+            align-self: auto;
+        }
+        
+    .footer{
+        background-color: darkblue;
+        
+    }
+        .end{
+            background-color: antiquewhite;
+        }
+            p{
+                color: darkblue;
+                text-align: center;
+            }
+
+            @media (max-width: 1200px){} /* desktop */
+            @media (max-width: 480px ){ /* smartphone */
+                
+                .accountForm{
+                    background-color: darkblue;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                }
+                    .personalInfo{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                    }
+
+            }
+            @media (max-width: 767px) {} /* tablet */ 
+                
+              

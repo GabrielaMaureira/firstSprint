@@ -1,10 +1,10 @@
 <?php
 class Account{
     //properties
-    protected $accountNumber;
-    protected $name;
-    protected $lastName;
-    protected $amount;
+    private $accountNumber;
+    private $name;
+    private $lastName;
+    private $amount;
 
     //methods
     public function __construct ($name, $lastName){
@@ -19,13 +19,13 @@ class Account{
     }
     public function withdraw ($amount){
         if($this->amount < $amount){
-            echo "Not enough money";
+            $result = "Not enough money";
         }else{
-           echo $this->amount -= $amount;
+           $result = $this->amount -= $amount;
         }
+        return $result;
     }
 
-    
     public function getAccountNumber(){
         return $this->accountNumber;
     }
