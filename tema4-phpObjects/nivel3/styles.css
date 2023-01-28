@@ -28,12 +28,12 @@ flex-flow: column nowrap;
         flex-direction: row;
         align-items: center;
         
+        
     }
         .personalInfo{
             display: flex;
             background-color: antiquewhite;
             flex: 1 1 auto;
-            
             
         }
         

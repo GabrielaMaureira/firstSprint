@@ -26,13 +26,31 @@
                     echo "<p> Name: </p> <h5>" .$obj->getName(). "\n" .$obj->getLastName(). "\n </h5>"; 
                     echo "<p>Account nº: </p> <h5>" .$obj->getAccountNumber()."</h5>"; 
                     
-                    // Click to deposit button call deposit method from Account class. Same with withdraw button.
-                    $amount= $_POST['amount'];
-                    if($_POST['deposit']){
-                        $total = $obj->deposit($amount);  
-                    } else if($_POST['withdraw']){
-                        $total = $obj->withdraw($amount);
-                    }
+                     // Click to deposit button call deposit method from Account class. Same with withdraw button.
+                     $amount= $_POST['amount'];
+                     if($_POST['deposit']){
+                         $total = $obj->deposit($amount);  
+                     } else if($_POST['withdraw']){
+                         $total = $obj->withdraw($amount);
+                     }
+                    
+                    /* $_SESSION 
+                    
+                    $amount = $_POST['amount'];
+                    session_start();
+
+                    if(isset($_SESSION['money'])) {
+
+                        if($_POST['deposit']){
+                            
+                            $_SESSION['money'] += $amount;
+                            
+                        }else if($_POST['withdraw']){
+                            
+                            $_SESSION['money'] -= $amount;
+                        }
+                    } */
+
                     ?>
             </div>
             <div class="personalInfo">
@@ -41,21 +59,19 @@
                 <button class="button" type="submit" name="deposit" value="deposit">DEPOSIT</button>
                 <button class="button" type="submit" name="withdraw" value="withdraw">WITHDRAW</button> 
                 <label  class="input" for="result">Total amount: </label>
-                <input class="input" type="text" name="result" placeholder="Total in your account" value="<?php echo $total; ?>">
+                <input class="input" type="text" name="result" placeholder="Total in your account" value="<?php echo $total; /*$_SESSION['money'];*/ ?>">
             </div>
         </form>
            
         <footer class="footer">
             <nav class="end">
-                <p>&#169; 2023</p>
+                <p>&#169; 2025</p>
             </nav>
 
         </footer>
     </div>
 </body>
 </html>
-
-
 
 
 
