@@ -2,24 +2,21 @@
 
 //Exercise 1
 
-$number = 2;
-isPrimeNumber($number);
+$limit = 20;
+sieveOfEratosthenes($limit);
 
-function isPrimeNumber ($number){
-    $isPrime = false;
-    for($i=2; $i<=$number; $i++){
-       if(($number%2)!=0 || $number == 2){
-            $isPrime = true;
-       }
-
-    }
+function sieveOfEratosthenes($limit) {
     
-    if($isPrime){
-        echo $number. " is a prime number \n"; 
-    }else{
-        echo $number. " is not a prime number \n";
+    $primes = array_fill(0, $limit+1, true); 
+    
+    for ($i = 2; $i <= sqrt($limit); $i++) { 
+        if ($primes[$i] == true) {
+            for ($x = $i * $i; $x <= $limit; $x += $i) { // Multiples of 20 change to false which it means it's not a prime nº
+                $primes[$x] = false;
+                var_dump($primes);
+            }
+        }
     }
-} 
-
+}
 
 ?>
