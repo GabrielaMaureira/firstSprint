@@ -1,4 +1,4 @@
 # HTML, CSS and PHP
-Exercises from Sprint 1
+HTML, CSS and PHP
 - HTML & CSS: Flexbox
 - PHP: Basics, Functions & OOP
