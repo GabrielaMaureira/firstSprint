@@ -1,4 +1,4 @@
-# HTML, CSS and PHP
+# firstSprint
 HTML, CSS and PHP
 - HTML & CSS: Flexbox
 - PHP: Basics, Functions & OOP
