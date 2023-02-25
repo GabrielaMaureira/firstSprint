@@ -28,7 +28,7 @@
                     
                      // Click to deposit button call deposit method from Account class. Same with withdraw button.
                      $amount= $_POST['amount'];
-                     if($_POST['deposit']){
+                     if(isset($_POST['deposit'])){
                          $total = $obj->deposit($amount);  
                      } else if($_POST['withdraw']){
                          $total = $obj->withdraw($amount);
